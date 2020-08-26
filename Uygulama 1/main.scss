@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+$ana-renk:#ff4d4d;
+$header:#17c0eb;
+$boxes:#fff200;
+$container:#32ff7e;
+$text-color:#f0ec0b;
+$hover:#787812;
+@mixin border($gen,$tip,$renk) {
+    border-width:$gen;
+    border-style: $tip;
+    border-color:$renk;
+    
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:$header;
+    float: left;
+    margin-right: 20px;
+}
+
+body{
+    background-color:$ana-renk;
+    .container{
+        height: 1000px;
+        width: 900px;
+        margin: 0 auto;
+        background-color: $container;
+        header{
+            width: 900px;
+            height: 50px;
+            background-color: $header;
+            ul{
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color:$text-color;
+                        width: 180px;
+                        text-align: center;
+                        font-size: 24px;
+                        line-height: 50px;
+                        &:hover{
+                            color:$hover;
+                        }
+                    }
+                }
+            }
+        }
+        .boxes{
+            height: 500px;
+            width: 700px;
+            margin: 40px auto ;
+            background-color: $boxes;
+
+            .box1{
+                @extend .box;
+                @include border(4px, double,#333); 
+            }
+            .box2{
+                @extend .box;
+                @include border(2px,dotted,#111);
+            }
+        }
+    }
+}

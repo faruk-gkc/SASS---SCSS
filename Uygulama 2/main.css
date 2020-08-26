@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*  If Yazım Kuralları */
+body {
+  background-color: #186;
+}
+
+body .container {
+  font-size: 32px;
+  color: coral;
+}
+
+body .container .p1 {
+  background-color: #186;
+  color: coral;
+  text-align: center;
+  padding: 12px;
+}
+
+body .container .p2 {
+  background-color: tomato;
+  color: #000;
+  border: 5px dotted #169;
+  /* Doğru ise Bunu yap*/
+}
+/*# sourceMappingURL=main.css.map */

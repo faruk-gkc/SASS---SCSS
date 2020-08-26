@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h3 {
+  color: cadetblue;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+
+ul li {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  margin: 0 15px;
+}
+
+ul li:nth-child(1) {
+  background-color: rgba(159, 36, 178, 0.6);
+}
+
+ul li:nth-child(2) {
+  background-color: rgba(11, 234, 245, 0.6);
+}
+
+ul li:nth-child(3) {
+  background-color: rgba(190, 169, 49, 0.6);
+}
+
+ul li:nth-child(4) {
+  background-color: rgba(237, 41, 145, 0.6);
+}
+/*# sourceMappingURL=main.css.map */

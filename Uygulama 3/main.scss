@@ -1,0 +1,27 @@
+
+h3{
+    color: cadetblue;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+$sizes:5px,10px,15px,20px,25px,30px;
+@each $size in $sizes {
+    .fontSize-#{$size}{
+        font-size: $size;
+    }
+    
+}
+
+
+/* Through --> Dahil    to--> Dahil değil*/
+
+@for $value from 1 through 5 {
+    $value:$value*2;
+    .borderWidth-#{$value}{
+        border-width: 1px*$value;
+        border-style: solid;
+        border-color: #000;
+        
+    }
+}

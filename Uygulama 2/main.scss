@@ -1,0 +1,41 @@
+$font:32px;
+$color:coral;
+$bg-color:#186;
+$pad:12px;
+$if:tomato;
+$else:yellowgreen;
+$back:#169;
+
+
+/*  If Yazım Kuralları */
+
+@mixin color($value){
+    @if $value{
+        background-color: $if;
+        color: #000;
+        border: 5px dotted $back;
+    }
+    @else{
+        background-color: $else;
+        color: #000;
+        border: 5px dotted $back;
+        font-size:$font ;
+    }
+}
+
+body{
+    background-color: $bg-color;
+    .container{
+        font-size: $font;
+        color: $color;
+        .p1{
+            background-color:$bg-color;
+            color: $color;
+            text-align: center;
+            padding: $pad;
+        }
+        .p2{
+            @include color(true)  /* Doğru ise Bunu yap*/
+        }
+    }
+}

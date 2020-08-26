@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box, body .container .boxes .box1, body .container .boxes .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #17c0eb;
+  float: left;
+  margin-right: 20px;
+}
+
+body {
+  background-color: #ff4d4d;
+}
+
+body .container {
+  height: 1000px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: #32ff7e;
+}
+
+body .container header {
+  width: 900px;
+  height: 50px;
+  background-color: #17c0eb;
+}
+
+body .container header ul li {
+  float: left;
+}
+
+body .container header ul li a {
+  display: block;
+  text-decoration: none;
+  color: #f0ec0b;
+  width: 180px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+body .container header ul li a:hover {
+  color: #787812;
+}
+
+body .container .boxes {
+  height: 500px;
+  width: 700px;
+  margin: 40px auto;
+  background-color: #fff200;
+}
+
+body .container .boxes .box1 {
+  border-width: 4px;
+  border-style: double;
+  border-color: #333;
+}
+
+body .container .boxes .box2 {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #111;
+}
+/*# sourceMappingURL=main.css.map */
